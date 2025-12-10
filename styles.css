@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Science Gothic", sans-serif;
+    background-color: #ab59b3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carda {
+    width: 320px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #9001c9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatarochka {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+}
+
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.description {
+    color: #e7a6f0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.science-gothic{
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-variation-settings: "slnt" 0,"wdth" 100, "CTRS" 0;
+  }
