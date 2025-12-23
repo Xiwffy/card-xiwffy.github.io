@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NAHRUK.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Нажми на дыньку</h1>
+        <div class="image-container">
+            <img id="melonImage" src="images/Miyaba.png" alt="Дынька Мияба" class="clickable-image">
+            <audio id="clickSound">
+                <!-- ЗДЕСЬ НУЖНО УКАЗАТЬ ПУТЬ К ЗВУКОВОМУ ФАЙЛУ -->
+                <!-- Например: <source src="sounds/click.mp3" type="audio/mpeg"> -->
+                <source src="sounds/Meow Miyabi zzz.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <a href="index.html" class="home-button">На главную</a>
+    </div>
+
+    <script>
+        const melonImage = document.getElementById('melonImage');
+        const clickSound = document.getElementById('clickSound');
+
+        melonImage.addEventListener('click', function() {
+            // Анимация подпрыгивания
+            this.classList.add('bounce');
+            
+            // Воспроизведение звука
+            clickSound.currentTime = 0; // Сброс на начало для быстрого повторного воспроизведения
+            clickSound.play().catch(error => {
+                console.log('Ошибка воспроизведения звука:', error);
+            });
+            
+            // Удаление класса анимации после завершения
+            setTimeout(() => {
+                this.classList.remove('bounce');
+            }, 600);
+        });
+    </script>
+</body>
+</html>
